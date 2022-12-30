@@ -1,0 +1,23 @@
+@use "../../sass/helpers" as *;
+
+.check {
+  @include flex(start, center, row, 0.5em);
+  margin-bottom: 1rem;
+  width: max-content;
+  cursor: pointer;
+
+  .checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid #c4c4c4;
+    border-radius: 4px;
+
+    &.checked {
+      background-color: $color;
+    }
+  }
+
+  label {
+    cursor: pointer;
+  }
+}

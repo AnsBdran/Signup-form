@@ -1,0 +1,25 @@
+@use "./sass/reset";
+@use "./sass/helpers/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $bg;
+  color: $text;
+}
+
+h1,
+h2,
+h3 {
+  color: $main-text;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}

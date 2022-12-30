@@ -1,0 +1,22 @@
+@use "../../sass/helpers" as *;
+.icon {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  width: 65px;
+  height: 65px;
+  padding: 1em;
+  @include center;
+  border-radius: $radius;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.icons {
+  @include flex(start);
+  margin-block: 2.5rem;
+  margin-inline: auto;
+  width: max-content;
+  // border: 2px solid black;
+}
