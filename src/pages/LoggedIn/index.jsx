@@ -4,7 +4,7 @@ import Input from "../../comps/Input";
 import Or from "../../comps/Or";
 import Quote from "../../comps/Quote";
 
-import "./After.scss";
+import "./LoggedIn.scss";
 
 function Login() {
   return (

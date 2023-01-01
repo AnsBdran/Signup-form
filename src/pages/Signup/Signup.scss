@@ -2,7 +2,9 @@
 
 .sign-up {
   @include flex(start, stretch, row, 5rem);
+  flex-wrap: wrap;
   &__img {
+    flex-basis: max-content;
     position: relative;
     background: url("../../../public/imgs/playstation-small.jpg");
     background-size: cover;
@@ -27,6 +29,8 @@
     justify-self: center;
     flex: 3;
     padding-bottom: 4rem;
+    padding-inline: 2rem;
+    // flex-basis: max-content;
     .content {
       max-width: 27rem;
 
