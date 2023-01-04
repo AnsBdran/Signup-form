@@ -1,6 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import { useNavigate } from "react-router-dom";
 
 import Input from "../Input";
 import Checkbox from "../Checkbox";
@@ -11,6 +12,8 @@ import "./Form.scss";
 import Warn from "../Warn";
 
 function Form() {
+  const navigate = useNavigate();
+
   const validationSchema = Yup.object({
     email: Yup.string().email("Invalid email address").required("Required"),
     password: Yup.string().min(5).max(12).required("Required"),
@@ -27,6 +30,9 @@ function Form() {
       accept_terms: false,
     },
     validationSchema: validationSchema,
+    onSubmit: () => {
+      navigate("/sign-in");
+    },
     // onSubmit: validateData,
   });
 

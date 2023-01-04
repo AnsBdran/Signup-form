@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../../comps/Button";
 import Icons from "../../comps/Icons";
 import Input from "../../comps/Input";
@@ -7,6 +8,12 @@ import Quote from "../../comps/Quote";
 import "./LoggedIn.scss";
 
 function Login() {
+  const navigate = useNavigate();
+
+  function handleSignIn() {
+    navigate("/game");
+  }
+
   return (
     <main className="logged-in__main">
       <section className="left">
@@ -28,7 +35,7 @@ function Login() {
             <Icons />
           </div>
           <Or />
-          <form>
+          <form onSubmit={handleSignIn}>
             <Input
               type="email"
               title="Your email"
