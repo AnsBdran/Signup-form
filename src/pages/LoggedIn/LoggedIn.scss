@@ -1,6 +1,6 @@
 @use "../../sass/helpers" as *;
 
-main {
+.logged-in__main {
   @include flex(start, start, row, 5rem);
 
   .left {

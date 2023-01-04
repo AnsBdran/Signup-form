@@ -8,7 +8,7 @@ import "./LoggedIn.scss";
 
 function Login() {
   return (
-    <main>
+    <main className="logged-in__main">
       <section className="left">
         <img src="imgs/logo_blue.svg" alt="gamers logo" className="logo" />
         <Quote />

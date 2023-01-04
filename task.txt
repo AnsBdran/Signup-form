@@ -1,9 +1,18 @@
 Create and implement this UI Figma design inside the last project (the forms) as a new page:
+
 read some articles about best practices and use them in your work
+
 create reusable components
+
 implement react-router in your website and have a look at (NavLink, useParams, useNavigate) in the documentation.
+
 Create just the light theme.
+
 Use meaningful commits.
+
 NEVER use a functional component if it's not necessary.
+
 Create new branches for the new work and don't remove it after merging.
+
+
 Happy new year :)

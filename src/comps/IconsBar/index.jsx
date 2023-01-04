@@ -7,15 +7,18 @@ class IconsBar extends Component {
   state = {};
   render() {
     return (
-      <section className="icons">
-        <Icon src="imgs/game/logo.svg" />
-        <div className="icons__center">
-          <Icon src="imgs/game/heart.svg" />
-          <Icon src="imgs/game/settings.svg" />
-          <Icon src="imgs/game/puzzle.svg" />
+      <section className="icons-bar">
+        <div className="icons-bar__logo">
+          <Icon src="imgs/game/light-theme-icons/game-logo.svg" />
         </div>
-        <div className="toggle_theme">
-          <Icon src="imgs/game/moon.svg" />
+        <div className="icons-bar__center">
+          <Icon src="imgs/game/light-theme-icons/like.svg" />
+          <Icon src="imgs/game/light-theme-icons/settings.svg" />
+          <Icon src="imgs/game/light-theme-icons/puzzle.svg" />
+        </div>
+        <div className="icons-bar__toggle-theme">
+          <Icon src="imgs/game/light-theme-icons/moon.svg" />
+          <Icon src="imgs/game/light-theme-icons/sun.svg" />
         </div>
       </section>
     );
