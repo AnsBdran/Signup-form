@@ -1,0 +1,56 @@
+@use "../../sass/helpers" as *;
+
+.logged-in__main {
+  @include flex(start, start, row, 5rem);
+
+  .left {
+    flex: 1;
+    padding: 4.5rem;
+
+    .logo {
+      margin-bottom: 7rem;
+    }
+
+    blockquote {
+      max-width: 80%;
+    }
+
+    .controller {
+      max-width: 333px;
+      margin-left: auto;
+      margin-top: -70px;
+    }
+  }
+
+  .right {
+    flex: 1;
+
+    .content {
+      padding-top: 9rem;
+      max-width: 27rem;
+
+      .title {
+        text-align: center;
+
+        h1 {
+          margin-bottom: 0.875rem;
+          font-size: 2.625rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    p {
+      text-align: center;
+      margin-top: 1rem;
+
+      span {
+        color: $color;
+      }
+    }
+
+    button {
+      margin-top: 3rem;
+    }
+  }
+}

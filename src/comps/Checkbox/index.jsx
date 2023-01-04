@@ -1,18 +1,19 @@
-import { useState } from "react";
 import "./Checkbox.scss";
 
-function Ckeckbox({ label }) {
-  const [checked, setChecked] = useState(false);
+function Ckeckbox({ label, value, toggleCheck, name }) {
+  // const checkedClass = checked ? "checked" : "";
 
-  const checkedClass = checked ? "checked" : "";
-
-  const toggleCheck = () => {
-    setChecked((prev) => !prev);
-  };
   return (
-    <div className="check" onClick={toggleCheck}>
-      <div className={"checkbox " + checkedClass}></div>
-      <label>{label}</label>
+    <div className="check">
+      <input
+        type="checkbox"
+        name={name}
+        onChange={toggleCheck}
+        id={label}
+        value={value}
+      />
+      {/* <div className={"checkbox " + checkedClass}></div> */}
+      <label htmlFor={label}>{label}</label>
     </div>
   );
 }

@@ -1,21 +1,25 @@
-import { useState } from "react";
 import "./Input.scss";
-function Input({ type, title, placeholder }) {
-  const [val, setval] = useState("");
-  const handleInput = (e) => {
-    setval(e.target.value);
-  };
 
-  if (type === "password") {
+function Input({
+  isPasswordType,
+  title,
+  placeholder,
+  handleChange,
+  name,
+  value,
+  handleBlur,
+}) {
+  if (isPasswordType) {
     return (
       <div>
         <label>{title}</label>
         <input
           type="password"
           placeholder={placeholder}
-          value={val}
-          onChange={handleInput}
-          required
+          value={value}
+          onChange={handleChange}
+          name={name}
+          onBlur={handleBlur}
         />
       </div>
     );
@@ -26,9 +30,10 @@ function Input({ type, title, placeholder }) {
         <input
           type="email"
           placeholder={placeholder}
-          value={val}
-          onChange={handleInput}
-          required
+          value={value}
+          onChange={handleChange}
+          name={name}
+          onBlur={handleBlur}
         />
       </>
     );

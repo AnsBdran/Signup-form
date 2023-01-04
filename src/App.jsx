@@ -1,20 +1,17 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.scss";
-import Logged from "./pages/Logged";
-import React from "react";
+import Game from "./pages/Game";
+import LogIn from "./pages/LogIn";
 import Signup from "./pages/Signup";
-import { useState } from "react";
 
 function App() {
-  const [submit, setSubmit] = useState(false);
-
-  const handleDirect = () => {
-    setSubmit((prev) => !prev);
-  };
-
   return (
     <div className="app">
-      {submit && <Logged />}
-      {!submit && <Signup handleDirect={handleDirect} />}
+      <Routes>
+        <Route path="/" element={<Signup />} />
+        <Route path="/sign-in" element={<LogIn />} />
+        <Route path="/game" element={<Game />} />
+      </Routes>
     </div>
   );
 }

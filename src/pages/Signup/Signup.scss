@@ -1,0 +1,54 @@
+@use "../../sass/helpers" as *;
+
+.sign-up {
+  @include flex(start, stretch, row, 5rem);
+  flex-wrap: wrap;
+  &__img {
+    flex-basis: max-content;
+    position: relative;
+    background: url("../../../public/imgs/playstation-small.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px #1566d8ec;
+    flex: 2;
+    padding: 5rem;
+
+    .dots,
+    .corner {
+      margin-left: auto;
+      margin-block: 1.75rem;
+    }
+
+    .circles {
+      position: absolute;
+      left: 0;
+      bottom: 1rem;
+    }
+  }
+
+  &__form {
+    justify-self: center;
+    flex: 3;
+    padding-bottom: 4rem;
+    padding-inline: 2rem;
+    // flex-basis: max-content;
+    .content {
+      max-width: 27rem;
+
+      .back {
+        margin: 3.5rem -2rem;
+      }
+
+      p {
+        margin: 0.625rem 0 2rem;
+      }
+    }
+  }
+}
+
+// ======================================================
+// inputs styles ========================================
+
+::placeholder {
+  font-size: 0.875rem;
+  color: $alt-text;
+}

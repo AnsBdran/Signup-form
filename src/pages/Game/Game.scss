@@ -1,0 +1,49 @@
+@use "../../sass/helpers" as *;
+
+.game-main {
+  display: grid;
+  grid-template-areas: "icons header" "icons main";
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content 1fr;
+  padding-bottom: 2rem;
+
+  &__icons {
+    grid-area: icons;
+    // position: sticky;
+    // top: 0;
+    position: relative;
+    // border: 0.2px solid;
+  }
+
+  &__header {
+    grid-area: header;
+    padding: 2rem;
+    padding-bottom: 0;
+    @include flex(end);
+  }
+
+  &__main {
+    grid-area: main;
+    padding-left: 2rem;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-areas: "cards cards cards" "last most friends";
+    row-gap: 3rem;
+    column-gap: 2rem;
+
+    .movie-cards-wrapper {
+      grid-area: cards;
+    }
+    .last-played-wrapper {
+      grid-area: last;
+    }
+    .most-recent-wrapper {
+      grid-area: most;
+    }
+    h2 {
+      font-weight: 800;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
