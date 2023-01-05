@@ -36,16 +36,20 @@ function Login() {
           </div>
           <Or />
           <form onSubmit={handleSignIn}>
-            <Input
-              type="email"
-              title="Your email"
-              placeholder="write your email"
-            />
-            <Input
-              type="password"
-              title="Enter your password"
-              placeholder="write your password"
-            />
+            <div className="field">
+              <Input
+                type="email"
+                title="Your email"
+                placeholder="write your email"
+              />
+            </div>
+            <div className="field">
+              <Input
+                type="password"
+                title="Enter your password"
+                placeholder="write your password"
+              />
+            </div>
             <Button content="Login" />
           </form>
           <p>

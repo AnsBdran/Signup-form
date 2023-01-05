@@ -9,3 +9,4 @@
 
 ![cover image](public/cover/cover1.png)
 ![cover image](public/cover/cover2.png)
+![cover image](public/cover/cover3.png)
