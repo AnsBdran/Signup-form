@@ -4,7 +4,12 @@ class Friends extends Component {
   render() {
     return (
       <div className="friends">
-        <h2>Friends</h2>
+        {/* <h2>Friends</h2> */}
+        <img
+          src="imgs/game/FRIENDS.png"
+          alt="friends"
+          style={{ maxWidth: "15rem", maxHeight: "100%" }}
+        />
       </div>
     );
   }

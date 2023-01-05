@@ -5,10 +5,12 @@
 
   .left {
     flex: 1;
-    padding: 4.5rem;
+    padding: 3rem;
 
     .logo {
-      margin-bottom: 7rem;
+      // border: 0.2px solid green;
+      margin-bottom: 4rem;
+      width: 22rem;
     }
 
     blockquote {
@@ -16,17 +18,19 @@
     }
 
     .controller {
-      max-width: 333px;
+      max-width: 233px;
       margin-left: auto;
-      margin-top: -70px;
+      margin-top: -50px;
+      margin-right: 5rem;
     }
   }
 
   .right {
     flex: 1;
+    padding-bottom: 2rem;
 
     .content {
-      padding-top: 9rem;
+      padding-top: 3rem;
       max-width: 27rem;
 
       .title {
@@ -42,7 +46,7 @@
 
     p {
       text-align: center;
-      margin-top: 1rem;
+      // margin-top: 1rem;
 
       span {
         color: $color;
@@ -50,7 +54,11 @@
     }
 
     button {
-      margin-top: 3rem;
+      margin-block: 1rem;
     }
   }
+}
+
+.field {
+  margin-bottom: 1.5rem;
 }
